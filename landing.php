@@ -3,7 +3,7 @@
 	<img src="https://my.uiw.edu/current-students/_imgs/uiw-students-learning-remotely-hero.jpg" id="mainImg">
 </div>
 <div id="heading"><div style="font-size: 13px;margin-bottom: 12px;">GREETINGS FROM COURSE ACADEMY</div>Bringing you a <b>positive</b> and <b>awakening perspective</b> towards your <span id="text"></span><br>
-	<a href="courses.html" class="btn btn-primary" style="font-size: 16px;padding: 10px 35px;margin-top: 30px;"><i class="fa fa-user" aria-hidden="true"></i> Start Now</a>
+	<a href="courses.php" class="btn btn-primary" style="font-size: 16px;padding: 10px 35px;margin-top: 30px;"><i class="fa fa-user" aria-hidden="true"></i> Start Now</a>
 </div><!-- <br><br> -->
 <div class="start">
 	<span style="color: #fe4a55;letter-spacing: 2px;">EDUCATION FOR EVERYONE</span><br>
@@ -16,22 +16,22 @@
 		<div class="col-lg-3 col-sm-6 part" style="background-image: url('images/blue.PNG');background-repeat: no-repeat;background-size: cover;">
 			<h3 style="font-weight: bold;"><i class="fas fa-brain" style="font-size: 35px;color: black;"></i><br><br>Learn the Latest Top Skills</h3>
 			<br><p style="font-size: 16px;">Learning top skills can bring an extra-ordinary outcome in a career.</p>
-			<a href="courses.html" class="btn btn-primary">Start Now</a>
+			<a href="courses.php" class="btn btn-primary">Start Now</a>
 		</div>
 		<div class="col-lg-3 col-sm-6 part" style="background-image: url('images/orange.PNG');background-repeat: no-repeat;background-size: cover;">
 			<h3 style="font-weight: bold;"><i class="fa fa-desktop" aria-hidden="true" style="font-size: 35px;"></i><br><br>Learn in Your Own Pace</h3>
 			<br><p style="font-size: 16px;">Everyone prefers to enjoy learning at their own pace & that gives a great result.</p>
-			<a href="courses.html" class="btn btn-primary">Start Now</a>
+			<a href="courses.php" class="btn btn-primary">Start Now</a>
 		</div>
 		<div class="col-lg-3 col-sm-6 part" style="background-image: url('images/green.PNG');background-repeat: no-repeat;background-size: cover;">
 			<h3 style="font-weight: bold;"><i class="fas fa-shield-alt" style="font-size: 35px;color: black;"></i><br><br>Learn From Industry Experts</h3>
 			<br><p style="font-size: 16px;">Experienced teachers can assist in learning faster with their best approaches!</p>
-			<a href="courses.html" class="btn btn-primary">Start Now</a>
+			<a href="courses.php" class="btn btn-primary">Start Now</a>
 		</div>
 		<div class="col-lg-3 col-sm-6 part" style="background-image: url('images/yellow.PNG');background-repeat: no-repeat;background-size: cover;">
 			<h3 style="font-weight: bold;"><i class="fas fa-globe-americas" style="font-size: 35px;color: black;"></i><br><br>Enjoy Learning From Anywhere</h3>
 			<br><p style="font-size: 16px;">We are delighted to give you options to enjoy learning from anywhere in the world.</p>
-			<a href="courses.html" class="btn btn-primary">Start Now</a>
+			<a href="courses.php" class="btn btn-primary">Start Now</a>
 		</div>
 	</div>
 </div>
