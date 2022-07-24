@@ -1,6 +1,6 @@
 <?php 
 	if(isset($_POST["rating"])){
-		$l=mysqli_connect("localhost","root","","course_academy",8111);
+		$l=mysqli_connect("localhost","root","","course_academy");
 		if(mysqli_connect_error()){
 		  	die("Unable to connect to database");
 		}else{
@@ -60,7 +60,7 @@
 <form method="post">
 	<div class="rating">
 		<?php
-			$link=mysqli_connect("localhost","root","","course_academy",8111);
+			$link=mysqli_connect("localhost","root","","course_academy");
 			if(mysqli_connect_error()){
 			  die("Unable to connect to database");
 			}else{
