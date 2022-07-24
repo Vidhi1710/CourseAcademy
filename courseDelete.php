@@ -1,6 +1,6 @@
 <?php
 	if($_GET){
-		$link = mysqli_connect("localhost","root","","course_academy",8111);
+		$link = mysqli_connect("localhost","root","","course_academy");
 		if(mysqli_connect_error()){
 		  die("Unable to connect to database");
 		}else{
