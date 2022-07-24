@@ -36,7 +36,7 @@
 							}
 							// session_start();
 							if(isset($_SESSION['user_id'])){
-								$link = mysqli_connect("localhost","root","","course_academy",8111);
+								$link = mysqli_connect("localhost","root","","course_academy");
 								if(mysqli_connect_error()){
 								  die("Unable to connect to database");
 								}else{
@@ -50,7 +50,7 @@
 								echo '<li><a href="myCourses.php" class="c1">My Courses</a></li>';
 								echo '<li><a href="logout.php" class="c1">Logout</a></li>';
 							}else if(isset($_SESSION['ins_id'])){
-								$link = mysqli_connect("localhost","root","","course_academy",8111);
+								$link = mysqli_connect("localhost","root","","course_academy");
 								if(mysqli_connect_error()){
 								  die("Unable to connect to database");
 								}else{
