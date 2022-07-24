@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Academy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/courses.css">
+</head>
+<body>
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<div class="navbar-header">
+				    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        			<span class="sr-only">Toggle navigation</span>
+	        			<span class="icon-bar"></span>
+	        			<span class="icon-bar"></span>
+	        			<span class="icon-bar"></span>
+	      			</button>
+					<a href="landing.html" class="navbar-brand" style="font-size: 21px;">Course Academy</a>
+				</div>
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="courses.html">Courses</a></li>
+						<li><a href="login.html" class="c1">Login</a></li>
+						<li><a href="signup.html" class="c1">Signup</a></li>
+						<li><a style="display: none;" href="" onclick="hiden()" id="c2">Logout</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<br><br><br>
+		<div class="jumbotron" style="text-align: center;">
+			<p style="font-size: 37px;font-weight: bold;margin-bottom: 8px;">Courses</p>
+			<p style="font-size: 16px;color: grey;"><a id="home" href="landing.html">Home</a>/Courses</p>
+		</div>
+		<div class="container">
+			<div class="row" id="rep">
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="cor1.jpeg" style="width: 100%;">
+						<div style="padding:15px;">
+							<a onclick="something()" id="chead"><h3><b>Flutter & Dart - The Complete Guide [2021 Edition]</b></h3></a>
+							<p style="color: #fe4a55;font-size: 16px;">Maximilian Schwarzmüller</p>
+							<p style="text-transform: uppercase;color: #bcbcbc;">Development</p>
+							<p style="margin-bottom: 0px;"><b style="font-size: 20px;">Rs. 360</b></p>
+							<p style="color: grey;font-size: 15px;"><b>Discount:</b> 96%(Original:8640)</p>
+							<div style="font-size: 16px;"><span class="pull-right"><i class="fas fa-user-friends"></i> 335,179</span>
+							<i class="fas fa-star"></i> 4.5</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="cor2.jpeg" style="width: 100%;">
+						<div style="padding:15px;">
+							<a href="#" id="chead"><h3><b>Flutter & Dart - The Complete Guide [2021 Edition]</b></h3></a>
+							<p style="color: #fe4a55;font-size: 16px;">Maximilian Schwarzmüller</p>
+							<p style="text-transform: uppercase;color: #bcbcbc;">Development</p>
+							<p style="margin-bottom: 0px;"><b style="font-size: 20px;">Rs. 360</b></p>
+							<p style="color: grey;font-size: 15px;"><b>Discount:</b> 96%(Original:8640)</p>
+							<div style="font-size: 16px;"><span class="pull-right"><i class="fas fa-user-friends"></i> 335,179</span>
+							<i class="fas fa-star"></i> 4.5</div>
+						</div>
+					</div>
+				</div>
+
+<!-- 				<div class="col-lg-4 col-sm-6 col-xs-12">
+					<div class="thumbnail">
+						<img src="cor3.jpeg" style="width: 100%;">
+						<div style="padding:15px;">
+							<a href="#" id="chead"><h3><b>Flutter & Dart - The Complete Guide [2021 Edition]</b></h3></a>
+							<p style="color: #fe4a55;font-size: 16px;">Maximilian Schwarzmüller</p>
+							<p style="text-transform: uppercase;color: #bcbcbc;">Development</p>
+							<p style="margin-bottom: 0px;"><b style="font-size: 20px;">Rs. 360</b></p>
+							<p style="color: grey;font-size: 15px;"><b>Discount:</b> 96%(Original:8640)</p>
+							<div style="font-size: 16px;"><span class="pull-right"><i class="fas fa-user-friends"></i> 335,179</span>
+							<i class="fas fa-star"></i> 4.5</div>
+						</div>
+					</div>
+				</div> -->
+			</div>
+		</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row" style="padding-bottom: 100px;">
+				<div class="col-sm-6">
+					<h2><b>Course Academy</b></h2>
+					<p style="font-size: 16px;">Working to bring significant changes in online-based learning by doing extensive research for course curriculum preparation, student engagements, and looking forward to the flexible education!</p>
+				</div>
+				<div class="col-sm-6">
+					<h2><b>Get Connect</b></h2>
+					<p style="font-size: 16px;">Aren't we friends on social media, yet? Use the buttons below to connect, then join my list to your right.</p><br>
+					<a href="https://www.instagram.com/i_vidhiarora/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/vidhi.arora.779857/"><i class="fab fa-facebook-f" style="padding: 5px 8px;"></i></a>
+					<a href="https://www.linkedin.com/in/vidhi-arora-79804b1b6/"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/Vidhi1710"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<p style="text-align: center;font-size: 16px;margin-bottom:12px;">&copy2021 Course Academy is made by Vidhi Arora</p>
+		</div>
+	</div>
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		// console.log(localStorage.loggedIn);
+		if(localStorage.loggedIn=="true"){
+			var h=document.getElementsByClassName("c1");
+			var nh=document.getElementById("c2");
+			h[0].style.display="none";
+			h[1].style.display="none";
+			nh.style.display="block";
+		}else{
+			var h=document.getElementsByClassName("c1");
+			var nh=document.getElementById("c2");
+			h[0].style.display="block";
+			h[1].style.display="block";
+			nh.style.display="none";
+		}
+		function hiden(){
+			localStorage.loggedIn=false;
+		}
+	</script>
+	<!-- <script type="text/javascript" src="CourseData.json"></script> -->
+<!-- <script type="text/javascript">
+	fetch('CourseData.json')
+  .then(response => response.json())
+  .then(data => {
+  	// Do something with your data
+  	console.log(data);
+  });
+</script> -->
+	<script type="text/javascript"> 
+                $(window).on("load", function () { 
+  					var t="";
+                    // FETCHING DATA FROM JSON FILE 
+                    $.getJSON("./CourseData.json",  function (data) { 
+                    // 	console.log(data);
+                        // var student = ''; 
+                        // console.log(data);
+
+                        // // ITERATING THROUGH OBJECTS 
+                        $.each(data, function (key, value) { 
+  
+                        //     //CONSTRUCTION OF ROWS HAVING 
+                        //     // DATA FROM JSON OBJECT 
+                        		var n=value.Name;
+	  							var p=value.Price;
+	  							var r=value.Rating;
+	  							var e=value.Enrollment;
+	  							var i=value.Image;
+	  							var d=value.Discount;
+	  							var m=value['Course provider'];
+	  							var cat=value.Category;
+	  							function something(){
+									var value1=n;
+									var value2=p;
+									var value3=r;
+									var value4=e;
+									var value5=value.Description;
+									var value6=i;
+									var v7=m;
+									var v8=cat;
+									var queryString = "?a=" + value1+"&b="+value2+"&c="+value3+"&d="+value4+"&e="+value5+"&f="+value6+"&g="+v7+"&h="+v8;
+									window.location.href = "courseDisplay.html" + queryString;
+								}
+	  							t+='<div class="col-lg-4 col-sm-6 col-xs-12"><div class="thumbnail"><img src="'
+								t+=i+'.jpeg" style="width: 100%;"><div style="padding:15px;"><a onclick="something()" id="chead"><h3><b>'
+								t+=n+'</b></h3></a><p style="color: #fe4a55;font-size: 16px;">'
+								t+=m+'</p><p style="text-transform: uppercase;color: #bcbcbc;">'
+								t+=cat+'</p><p style="margin-bottom: 0px;"><b style="font-size: 20px;">Rs. '
+								t+=p+'</b></p><p style="color: grey;font-size: 15px;"><b>Discount:</b> '
+								t+=d+'</p><div style="font-size: 16px;"><span class="pull-right"><i class="fas fa-user-friends"></i> '
+								t+=e+'</span><i class="fas fa-star"></i> '
+								t+=r+'</div></div></div></div>'
+                            
+                        }); 
+                          
+                        $("#rep").html(t);
+                    }); 
+                }); 
+            </script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>

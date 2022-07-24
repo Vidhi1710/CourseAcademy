@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Academy</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Sen&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/login.css">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+			    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	     			<span class="sr-only">Toggle navigation</span>
+	     			<span class="icon-bar"></span>
+	     			<span class="icon-bar"></span>
+	     			<span class="icon-bar"></span>
+	   			</button>
+				<a href="landing.html" class="navbar-brand" style="font-size: 21px;">Course Academy</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="courses.html">Courses</a></li>
+					<li><a href="login.html" class="c1">Login</a></li>
+					<li><a href="signup.html" class="c1">Signup</a></li>
+					<li><a style="display: none;" href="" onclick="hiden()" id="c2">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container" id="frm">
+		<h1 style="text-align: center;font-weight: bold;">
+			Login
+		</h1>
+		<br>
+		<form>
+			<b>EMAIL</b>
+			<div class="form-group">
+				<input type="text" id="username" placeholder="Email" class="form-control" required>
+			</div>
+			<b>PASSWORD</b>
+			<div class="form-group">
+				<input type="password" id="password" placeholder="Password" class="form-control" required>	
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-primary btn-block" onclick="oubmit()">LOGIN</button>
+			</div>
+		</form>
+		<h3 style="text-align:center;">
+			OR
+		</h3>
+		<div class="form-group">
+			<a href="signup.html" class="btn btn-default btn-block">SIGN UP</a>
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="row" style="padding-bottom: 100px;">
+				<div class="col-sm-6">
+					<h2><b>Course Academy</b></h2>
+					<p style="font-size: 16px;">Working to bring significant changes in online-based learning by doing extensive research for course curriculum preparation, student engagements, and looking forward to the flexible education!</p>
+				</div>
+				<div class="col-sm-6">
+					<h2><b>Get Connect</b></h2>
+					<p style="font-size: 16px;">Aren't we friends on social media, yet? Use the buttons below to connect, then join my list to your right.</p><br>
+					<a href="https://www.instagram.com/i_vidhiarora/"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/vidhi.arora.779857/"><i class="fab fa-facebook-f" style="padding: 5px 8px;"></i></a>
+					<a href="https://www.linkedin.com/in/vidhi-arora-79804b1b6/"><i class="fab fa-linkedin-in"></i></a>
+					<a href="https://github.com/Vidhi1710"><i class="fab fa-github"></i></a>
+				</div>
+			</div>
+			<p style="text-align: center;font-size: 16px;margin-bottom:12px;">&copy2021 Course Academy is made by Vidhi Arora</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// console.log(localStorage.loggedIn);
+		if(localStorage.loggedIn=="true"){
+			var h=document.getElementsByClassName("c1");
+			var nh=document.getElementById("c2");
+			h[0].style.display="none";
+			h[1].style.display="none";
+			nh.style.display="block";
+		}else{
+			var h=document.getElementsByClassName("c1");
+			var nh=document.getElementById("c2");
+			h[0].style.display="block";
+			h[1].style.display="block";
+			nh.style.display="none";
+		}
+		function hiden(){
+			localStorage.loggedIn=false;
+		}
+		function oubmit(){
+	        var user=document.getElementById("username").value;
+		    var pass=document.getElementById('password').value;
+		    if(user==""||pass==""){
+		        alert("Please enter all fields");
+		    }else{
+		    	if(typeof(Storage) !== "undefined") {
+				    if (localStorage.username && localStorage.password) {
+				        if(localStorage.username==user&&localStorage.password==pass){
+				        	localStorage.loggedIn=true;
+				        	alert("Welcome to Course Academy");
+				        	location.replace("landing.html")
+				        }else{
+				        	alert("Invalid username or password.")	
+				        }
+				    } else {
+				        alert("Invalid username or password.")
+				    }
+				}else{
+					alert("An unknown error occured!")
+				}
+		    }
+		}
+	</script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
