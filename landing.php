@@ -44,7 +44,7 @@
 		</div>
 		<div class="col-sm-4">
 			<b><?php 
-				$link=mysqli_connect("localhost","root","","course_academy",8111);
+				$link=mysqli_connect("localhost","root","","course_academy");
 				if(mysqli_connect_error()){
 				  die("Unable to connect to database");
 				}else{
