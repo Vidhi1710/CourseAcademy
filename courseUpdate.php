@@ -1,3 +1,12 @@
+<?php
+	if(!isset($_SESSION)){
+		session_start();
+	}
+	if(!isset($_SESSION["ins_id"])){
+	    header("location:landing.php");
+	    exit();
+	}
+?>
 <?php include'header.php' ?>
 <div class="container" id="frm">
 	<h1 style="text-align: center;font-weight: bold;">
