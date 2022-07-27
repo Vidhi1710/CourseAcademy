@@ -1,4 +1,13 @@
 <?php
+	if(!isset($_SESSION)){
+		session_start();
+	}
+	if(!isset($_SESSION["ins_id"])){
+	    header("location:landing.php");
+	    exit();
+	}
+?>
+<?php
 	if($_POST){
 		$link = mysqli_connect("localhost","root","","course_academy");
 		if(mysqli_connect_error()){
