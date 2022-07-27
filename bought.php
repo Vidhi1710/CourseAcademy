@@ -1,3 +1,12 @@
+<?php
+	if(!isset($_SESSION)){
+		session_start();
+	}
+	if(!isset($_SESSION["user_id"])){
+	    header("location:landing.php");
+	    exit();
+	}
+?>
 <?php include'header.php' ?>
 <?php 
 	$link = mysqli_connect("localhost","root","","course_academy");
