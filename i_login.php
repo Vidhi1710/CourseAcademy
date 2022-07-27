@@ -1,7 +1,10 @@
 <?php
-	if(isset($_SESSION['ins_id'])){
-		header('Location: landing.php');
-		exit;
+	if(!isset($_SESSION)){
+		session_start();
+	}
+	if(isset($_SESSION["user_id"]) || isset($_SESSION["ins_id"])){
+	    header("location:landing.php");
+	    exit();
 	}
 ?>
 <br><br><br>
